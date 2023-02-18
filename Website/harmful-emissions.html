@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecovision | Harmful Emissions</title>
+    <!-- Fontawsome library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- normalize library -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- climate-changes css file -->
+    <link rel="stylesheet" href="CSS/harmful-emissions.css" />
+    <!-- website icon -->
+    <link rel="icon" href="images/Ecovision.icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Start loading animation section -->
+    <div class="loading">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loading = document.querySelector(".loading");
+        loading.className += " hidden"; //class loading + class hidden
+      });
+    </script>
+    <!-- End loading animation section -->
+
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/Ecovision.png" alt="logo" /></a>
+        </div>
+        <div class="searchbox">
+          <div class="icon">
+            <i class="search fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="input">
+            <input
+              type="text"
+              placeholder="search in google"
+              id="search"
+              onkeypress="searchGoogle(event)"
+            />
+            <i class="clear fa fa-times"></i>
+          </div>
+        </div>
+        <script>
+          let search = document.querySelector(".search");
+          let clear = document.querySelector(".clear");
+
+          search.onclick = function () {
+            document.querySelector(".searchbox").classList.toggle("active");
+          };
+
+          clear.onclick = function () {
+            document.getElementById("search").value = "";
+          };
+        </script>
+        <script>
+          function searchGoogle(event) {
+            // Check if the "Enter" key was pressed
+            if (event.keyCode === 13) {
+              // Get the value of the search box
+              let searchValue = document.getElementById("search").value;
+
+              // Construct the Google search URL
+              let searchUrl =
+                "https://www.google.com/search?q=" +
+                encodeURIComponent(searchValue);
+
+              // Open the Google search URL in a new tab
+              window.open(searchUrl, "_blank");
+            }
+          }
+        </script>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#subtitle">Introduction</a></li>
+            <li>
+              <a href="#subtitle-1"
+                >What is the meaning of harmful emissions?</a
+              >
+            </li>
+            <li>
+              <a href="#subtitle-2"
+                >The effects of harmful emissions on the human?</a
+              >
+            </li>
+            <li>
+              <a href="#subtitle-3"
+                >The effects of harmful emissions on the environment:</a
+              >
+            </li>
+            <li><a href="#subtitle-4">How to reduce harmful emissions:</a></li>
+            <li><a href="#subtitle-5">Conclusion:</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start components -->
+    <div class="components">
+      <div class="container">
+        <div class="components-content">
+          <h2 class="title">Harmful Emmisions</h2>
+          <div class="subtitle" id="subtitle">
+            <h2>Introduction</h2>
+          </div>
+          <div class="text">
+            <p class="p1">
+              Harmful emissions are substances that are released into the
+              atmosphere and have negative impacts on the environment and human
+              health. These emissions can come from a variety of sources,
+              including power plants, industrial processes, transportation, and
+              agriculture. The most common harmful emissions include carbon
+              dioxide, sulfur dioxide, nitrogen oxides, and particulate matter.
+              These emissions contribute to air pollution, which can cause
+              respiratory problems, heart disease, and other health issues. They
+              also contribute to climate change, which can lead to rising
+              temperatures, changing weather patterns, and rising sea levels. To
+              reduce the impacts of harmful emissions, it is important for
+              individuals, governments, and businesses to take action to reduce
+              their emissions and promote sustainability.
+            </p>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/e6rglsLy1Ys"
+              title="Harmful Emissions Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="subtitle-1" id="subtitle-1">
+            <h2>What is the meaning of harmful emissions?</h2>
+          </div>
+          <div class="text-1">
+            <p class="respond">
+              Harmful emissions refer to pollutants released into the atmosphere
+              that have detrimental effects on the environment and human health.
+              These emissions include a variety of toxic substances, such as
+              carbon dioxide, sulfur dioxide, nitrogen oxides, and particulate
+              matter, which are produced through human activities such as
+              burning fossil fuels, industrial processes, transportation, and
+              agriculture. The effects of harmful emissions are far-reaching and
+              can include air pollution, climate change, and adverse impacts on
+              human health, including respiratory problems, heart disease, and
+              other health issues. It is important to reduce harmful emissions
+              to protect the environment and promote sustainability for future
+              generations.
+            </p>
+          </div>
+          <div class="subtitle-2" id="subtitle-2">
+            <h2>The effects of harmful emissions on the human?</h2>
+          </div>
+          <div class="text-2">
+            <p>
+              Harmful emissions from various sources such as factories,
+              vehicles, and power plants can have detrimental effects on human
+              health and the environment. Some common emissions such as carbon
+              monoxide, sulfur dioxide, and nitrogen oxides can lead to
+              respiratory problems and heart diseases. Fine particulate matter,
+              which is present in air pollution, has been linked to lung cancer
+              and stroke. Additionally, emissions of greenhouse gases contribute
+              to climate change, which can cause heatwaves, natural disasters,
+              and sea level rise that impact human populations. In summary,
+              harmful emissions can lead to short- and long-term health effects,
+              as well as negative impacts on the environment.
+            </p>
+          </div>
+          <div class="image">
+            <img
+              class="img-1"
+              src="images/harmful-emissions(2).jpg"
+              alt="Harmful Emissions Image"
+              title="Harmful Emissions"
+              height="200"
+              width="500"
+            />
+          </div>
+          <div class="subtitle-3" id="subtitle-3">
+            <h2>The effects of harmful emissions on the environment:</h2>
+          </div>
+          <div class="text-3">
+            <p>
+              Harmful emissions from various sources such as factories,
+              vehicles, and power plants can have significant impacts on the
+              environment. Some of the effects include:
+            </p>
+            <p>
+              1- Air pollution: Emissions of pollutants such as sulfur dioxide
+              and nitrogen oxides can contribute to acid rain and smog, which
+              can harm plants, wildlife, and bodies of water.
+            </p>
+            <p>
+              2- Climate change: Greenhouse gas emissions, such as carbon
+              dioxide and methane, trap heat in the Earth's atmosphere, leading
+              to global warming and climate change. This can result in more
+              frequent and severe weather events, rising sea levels, and melting
+              of polar ice caps.
+            </p>
+            <p>
+              3- Ozone depletion: Certain emissions, such as chlorofluorocarbons
+              (CFCs), can deplete the ozone layer, which protects the Earth from
+              harmful ultraviolet radiation
+            </p>
+            <p>
+              4- Water pollution: Emissions from industries and power plants can
+              contaminate water sources with toxic chemicals and heavy metals.
+              This can harm aquatic life and make water unsafe for human
+              consumption..
+            </p>
+            <p>
+              5- Soil contamination: Harmful chemicals and heavy metals in
+              emissions can contaminate soil, making it difficult for plants to
+              grow and wildlife to thrive
+            </p>
+            <p>
+              In conclusion, harmful emissions can have a wide range of negative
+              effects on the environment, including air and water pollution,
+              climate change, ozone depletion, and soil contamination
+            </p>
+          </div>
+          <div class="subtitle-4" id="subtitle-4">
+            <h2>How to reduce harmful emissions:</h2>
+          </div>
+          <div class="text-4">
+            <p>
+              Reducing harmful emissions requires a combination of individual
+              actions and government policies. Here are some ways to reduce
+              emissions:
+            </p>
+            <p>
+              1- Energy efficiency: Improving energy efficiency in homes,
+              buildings, and vehicles can reduce the amount of energy consumed
+              and, in turn, the amount of emissions produced
+            </p>
+
+            <p>
+              2- Renewable energy: Switching to renewable energy sources, such
+              as wind and solar power, can significantly reduce greenhouse gas
+              emissions. Public transportation: Encouraging the use of public
+              transportation, biking, and walking can reduce emissions from
+              vehicles.
+            </p>
+            <p>
+              3- Waste reduction: Reducing, reusing, and recycling can reduce
+              the amount of waste that ends up in landfills, where it emits
+              methane, a potent greenhouse gas.
+            </p>
+            <p>
+              4- Industry regulations: Governments can implement regulations
+              that limit emissions from industries and power plants, and promote
+              the use of clean technology.
+            </p>
+            <p>
+              5- Consumer choices: Making informed consumer choices, such as
+              choosing products with minimal packaging and reducing meat
+              consumption, can also help reduce emissions
+            </p>
+            <p>
+              In conclusion, reducing harmful emissions requires a multi-faceted
+              approach that involves both individual actions and government
+              policies. By taking steps to improve energy efficiency, switch to
+              renewable energy, reduce waste, and regulate industries, we can
+              work towards a cleaner, healthier future..
+            </p>
+          </div>
+          <div class="subtitle-5" id="subtitle-5">
+            <h2>Conclusion:</h2>
+          </div>
+          <div class="text-5">
+            <p>
+              In conclusion, harmful emissions from various sources such as
+              factories, vehicles, and power plants have significant negative
+              impacts on both human health and the environment. To reduce these
+              emissions, a multi-faceted approach is required that involves both
+              individual actions and government policies. By making changes such
+              as improving energy efficiency, switching to renewable energy,
+              reducing waste, and regulating industries, we can work towards a
+              cleaner and healthier future. By taking these steps, we can help
+              mitigate the harmful effects of emissions and protect both human
+              health and the environment for generations to come.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End components -->
+  </body>
+</html>

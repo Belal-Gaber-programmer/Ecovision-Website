@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecovision | Solutions</title>
+    <!-- Fontawsome library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- normalize library -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- solutions css file -->
+    <link rel="stylesheet" href="CSS/solutions.css" />
+    <!-- website icon -->
+    <link rel="icon" href="images/Ecovision.icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Start loading animation section -->
+    <div class="loading">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        const loading = document.querySelector(".loading");
+        loading.className += " hidden"; //class loading + class hidden
+      });
+    </script>
+    <!-- End loading animation section -->
+
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/Ecovision.png" alt="logo" /></a>
+        </div>
+        <div class="searchbox">
+          <div class="icon">
+            <i class="search fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="input">
+            <input
+              type="text"
+              placeholder="search in google"
+              id="search"
+              onkeypress="searchGoogle(event)"
+            />
+            <i class="clear fa fa-times"></i>
+          </div>
+        </div>
+        <script>
+          let search = document.querySelector(".search");
+          let clear = document.querySelector(".clear");
+
+          search.onclick = function () {
+            document.querySelector(".searchbox").classList.toggle("active");
+          };
+
+          clear.onclick = function () {
+            document.getElementById("search").value = "";
+          };
+        </script>
+        <script>
+          function searchGoogle(event) {
+            // Check if the "Enter" key was pressed
+            if (event.keyCode === 13) {
+              // Get the value of the search box
+              let searchValue = document.getElementById("search").value;
+
+              // Construct the Google search URL
+              let searchUrl =
+                "https://www.google.com/search?q=" +
+                encodeURIComponent(searchValue);
+
+              // Open the Google search URL in a new tab
+              window.open(searchUrl, "_blank");
+            }
+          }
+        </script>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li>
+              <a href="#subtitle"
+                >Reducing Energy Consumption: A Key Solution for the
+                Environment</a
+              >
+            </li>
+            <li>
+              <a href="#subtitle-1">
+                Making Eco-Friendly Choices: The Power of Consumer Decisions</a
+              >
+            </li>
+            <li>
+              <a href="#subtitle-2">
+                Investing in Renewable Energy: A Path to a Sustainable Future</a
+              >
+            </li>
+            <li>
+              <a href="#subtitle-3"
+                >Promoting Sustainable Transportation: Moving Toward a Greener
+                Future</a
+              >
+            </li>
+            <li><a href="#subtitle-6">Conclusion</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start components -->
+    <div class="components">
+      <div class="container">
+        <div class="components-content">
+          <h2 class="title">Solutions</h2>
+          <div class="subtitle" id="subtitle">
+            <h2>
+              Reducing Energy Consumption: A Key Solution for the Environment
+            </h2>
+          </div>
+          <div class="text">
+            <p class="p1">
+              One of the simplest and most effective ways to reduce emissions
+              and protect the environment is to reduce energy consumption. This
+              can be achieved by implementing energy-efficient technologies and
+              practices in homes, buildings, and vehicles, such as using LED
+              light bulbs, upgrading to Energy Star appliances, and improving
+              insulation. By reducing energy consumption, we can reduce
+              emissions from power plants and help mitigate the effects of
+              climate change.
+            </p>
+          </div>
+          <div class="subtitle-1" id="subtitle-1">
+            <h2>
+              Making Eco-Friendly Choices: The Power of Consumer Decisions
+            </h2>
+          </div>
+          <div class="text-1">
+            <p class="respond">
+              Consumers have the power to make a significant impact on the
+              environment by making eco-friendly choices. This can include
+              choosing products with minimal packaging, reducing meat
+              consumption, and opting for public transportation or walking
+              instead of driving. By making informed consumer choices, we can
+              reduce waste, conserve resources, and reduce emissions.
+            </p>
+          </div>
+          <div class="subtitle-2" id="subtitle-2">
+            <h2>
+              Investing in Renewable Energy: A Path to a Sustainable Future
+            </h2>
+          </div>
+          <div class="text-2">
+            <p>
+              Switching to renewable energy sources such as wind and solar power
+              is another critical solution for reducing emissions and protecting
+              the environment. Renewable energy sources emit significantly fewer
+              harmful pollutants and greenhouse gases than traditional energy
+              sources, and they also have the potential to create jobs and
+              stimulate economic growth. By investing in renewable energy, we
+              can help create a cleaner, healthier future for all.
+            </p>
+          </div>
+          <div class="subtitle-3" id="subtitle-3">
+            <h2>
+              Promoting Sustainable Transportation: Moving Toward a Greener
+              Future
+            </h2>
+          </div>
+          <div class="text-3">
+            <p>
+              Transportation is a significant contributor to emissions, and
+              promoting sustainable transportation options can have a
+              significant impact on the environment. This can include
+              encouraging the use of public transportation, biking, and walking,
+              as well as investing in electric vehicles and alternative fuels.
+              By reducing emissions from transportation, we can help reduce air
+              pollution and mitigate the effects of climate change.
+            </p>
+          </div>
+          <div class="subtitle-6" id="subtitle-6">
+            <h2>Conclusion</h2>
+          </div>
+          <div class="text-6">
+            <p>
+              In conclusion, there are a variety of solutions available for
+              reducing emissions and protecting the environment. By reducing
+              energy consumption, making eco-friendly choices, investing in
+              renewable energy, and promoting sustainable transportation, we can
+              work towards a cleaner, healthier future for all.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End components -->
+  </body>
+</html>
